@@ -85,6 +85,8 @@ _Note: If you are not running the docker-compose.yml example or exposing the bac
 
    Run the following command from the **project root directory**:
    ```bash
+   docker-compose up -d
+   
    docker build -t gemini-fullstack-langgraph -f Dockerfile .
    ```
 **2. Run the Production Server:**

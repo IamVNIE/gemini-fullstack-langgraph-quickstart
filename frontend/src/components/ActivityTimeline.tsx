@@ -110,7 +110,7 @@ export function ActivityTimeline({
                         {typeof eventItem.data === "string"
                           ? eventItem.data
                           : Array.isArray(eventItem.data)
-                          ? (eventItem.data as string[]).join(", ")
+                          ? (eventItem.data as string[])?.join(", ") || "No data"
                           : JSON.stringify(eventItem.data)}
                       </p>
                     </div>
